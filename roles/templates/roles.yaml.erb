@@ -1,0 +1,12 @@
+---
+<%- host = @hostname.split('-') %>
+<%- location = host[0] %>
+<%- env = host[1] %>
+<%- role = host[2] %>
+<%- context = host[3].delete "0-9" %>
+<%- node = host[-1] %>
+location: <%= location %>
+env: <%= env %>
+role: <%= role %>
+context: <%= context %>
+node: <%= node %>
